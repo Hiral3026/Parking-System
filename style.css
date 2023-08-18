@@ -1,0 +1,230 @@
+/* Set font family and background color for all elements */
+* {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	background-color: beige;
+}
+
+/* Center and style logo image */
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 200px;
+	height: 100px;
+  }
+
+/* Styling the main heading */
+h1 {
+    text-align: center;
+}
+
+/* Style for the paragraph */
+p {
+  text-align: center;
+  font-size: 20px;
+
+}
+
+/* Style for the parking lot section */
+.parking-lot {
+    margin: 50px auto;
+    text-align: center;
+}
+
+/* Style for the parking lot section's heading */
+.customer-form h2 {
+    font-size: 24px;
+    text-align: center;
+}
+
+/* Style for the parking spots container */
+.parking-spots {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+/* Style for each parking spot */
+.parking-spot {
+    width: 60px;
+    height: 60px;
+    background-color: #eaede3;
+    border: 1px solid #000000;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+}
+
+/* Style for taken parking spot */
+.parking-spot.taken {
+    background-color: rgb(60, 55, 182);
+    color: #fff;
+}
+
+/* Style for available parking spot on hover */
+.parking-spot.available:hover {
+    cursor: pointer;
+    background-color: #999;
+    color: #fff;
+}
+
+/* Form styling starts here */
+
+/* Style for the form container */
+.form-data {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+/* Styles for the customer form container */
+.customer-form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  max-width: 600px; 
+  margin: 0 auto; 
+}
+
+  legend {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 1em;
+  }
+
+  /* Styles for the form header */
+  .customer-form h2 {
+    margin-bottom: 20px;
+  }
+  
+/* Styles for the form itself */
+  .customer-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+}
+  
+  /* Styles for the form labels */
+  .customer-form label {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  /* Styles for the form inputs */
+  .customer-form input {
+    margin-top: 5px;
+    padding: 5px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 18px;
+  }
+  
+  /* Styles for the form button */
+  .customer-form button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color:rgb(68, 68, 230);
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  /* Styles for the form button when hovered over */
+  .customer-form button:hover {
+    background-color: #008CBA;
+  }
+
+/* Form styling ends */
+
+/* Style the parking space status section */
+.status {
+    margin: 20px;
+    padding: 20px;
+  }
+  
+  .status p {
+    margin: 0;
+    text-align: center;
+    font-weight: bold;
+    color: red;
+  }
+
+/* Style for the Parking fee cost */
+#total {
+  margin: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Style for the revenue generated */
+#revenue {
+  margin: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.revenue-container {
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+}
+
+/* Styles for the revenue button */
+  #total-revenue {
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color:rgb(68, 68, 230);
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  /* Styles for the revenue button when hovered over */
+  #total-revenue:hover {
+    background-color: #008CBA;
+  }
+
+/* Table styling Starts here */
+/* Styling table */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+/* Style for tables cells */
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    
+}
+
+/* Set the data inside the table to center */
+td {
+    text-align: center;
+}
+
+/* Style for table hover */
+tr:hover {
+    background-color: coral;
+}
+
+/* Set the color of table header */
+th {
+    background-color: rgb(68, 68, 230);
+    color: white;
+}
+/* Table styling ends */
+
