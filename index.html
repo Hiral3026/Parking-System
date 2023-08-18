@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parking Lot Management</title>
+
+    <!--CSS  file-->
+    <link rel="stylesheet" href="style.css">
+    
+
+</head>
+<body>
+    
+    <!-- logo for the page-->
+    <div class="logo">
+        <img src="Images/parking.svg">
+    </div>
+
+    <!--Main heading of the document-->
+    <h1>Parking Management System</h1>
+
+    <p>This parking management system helps the parking owner to add and remove cars from the parking spot. It also helps the owner to calculate the cost of the parking and total revenue generated for the day.</p>
+
+    
+    <div class="parking-lot">
+        <h2>Parking Spots</h2>
+
+        <!--all the parking spots -->
+        <div class="parking-spots">
+            
+            <!--  represent the individual parking spots -->
+		    <!-- The "taken" class indicates that the spot is currently occupied -->
+		    <!-- The number inside the div represents the spot number -->
+            <div class="parking-spot taken">1</div>
+            <div class="parking-spot taken">2</div>
+            <div class="parking-spot taken">3</div>
+            <div class="parking-spot available">4</div>
+            <div class="parking-spot available">5</div>
+            <div class="parking-spot available">6</div>
+            <div class="parking-spot available">7</div>
+            <div class="parking-spot available">8</div>
+            <div class="parking-spot available">9</div>
+            <div class="parking-spot available">10</div>
+            
+        </div>
+    </div>
+
+    
+    <div class="form-data">
+        
+        <div class="customer-form">
+            <h2>Enter Customer Details</h2>
+
+            <!--Customer details form-->
+            <form id="customer-details">
+
+                <!--Adding car details-->
+                <fieldset>
+
+                    <legend>Add Car: </legend>
+
+                <!--Label and input field for the spot number-->
+                <label for="spotNo">Spot Number:</label>
+                <input type="text" id="spotNo" required placeholder="Enter Spot Number">
+
+                <!-- Label and input field for the customer name -->
+                <label for="name">Customer Name:</label>
+                <input type="text" id="name" required placeholder="Enter customer name">
+
+                <!-- Label and input field for the license plate number -->
+                <label for="license">License Plate:</label>
+                <input type="text" id="license" required placeholder="Enter car number">
+
+                <!--label and input for the "Time In" field-->
+                <label for="time-in">Time In:</label>
+                <input type="datetime-local" id="mydatetime">
+
+                <!--A button to submit the form-->
+                <button type="submit" id="submit-details">Add car</button><br><br>
+
+                </fieldset>
+              
+                <form id="remove-car">
+
+                <!--Removes car-->
+                <fieldset>
+
+                <legend>Remove car:</legend>
+
+                <!--Label and input for the spot number to be removed-->
+                <label for="remove-spot-No">Spot Number:</label>
+                <input type="text" id="remove-spot-No" placeholder="Enter spot number">
+
+                <!--label and input for the "Time Out" field-->
+                <label for="time-out">Time Out:</label>
+                <input type="datetime-local" id="datetime">
+
+                <!--button to remove car-->
+                <button id="remove-car">Remove Car</button>
+                
+
+                </fieldset>
+                </form>
+
+            
+        </div>
+    </div>
+
+    <!--parking space status-->
+    <div class="status">
+        <p id="status"></p>
+    </div>
+
+    <!--calculate parking cost-->
+    <div class="Parking Fee">
+        <p id="total">Total Parking Fee: </p>
+    </div>
+
+    <!--calculate revenue generated per day-->
+    <div>
+        <p id="revenue">Total Revenue of the day: </p>
+    </div>
+
+    <!--a button to calculate revenue-->
+    <div  class="revenue-container">
+    <button id="total-revenue">Revenue Generated</button>
+    </div>
+
+    <!--table to store customer details-->
+    <table id="customer-table">
+        <thead>
+            <tr>
+                <th>Spot Number</th>
+                <th>Customer Name</th>
+                <th>License Plate</th>
+                <th>Time In</th>
+            </tr>
+        </thead>
+    </table>
+
+    <!--Javascript file-->
+    <script src= "script.js"></script>
+
+</body>
+</html>
